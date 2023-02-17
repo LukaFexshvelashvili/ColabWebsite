@@ -1,0 +1,857 @@
+@font-face {
+  font-family: main;
+  src: url("fonts/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: mainbold;
+  src: url("fonts/DMSans-Bold.ttf");
+}
+* {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #020113;
+}
+
+a:hover {
+  color: #020113;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(199, 199, 199, 0.444);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1A7BFF;
+}
+
+.buttonexm, .chap-second .chap-second-first .getintouch, .chap-first .flx .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .chap-first .flx .plan-chooser .plan-block .buttonplace .plan-button, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .secbut, .first-section .first-col .getstart, nav .butlogs button:nth-child(2), nav .butlogs button:nth-child(1) {
+  border-radius: 5px;
+  background-color: #1A7BFF;
+  padding: 8px 25px;
+  color: white;
+  font-family: main;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+}
+
+.fontexmp, nav .flx li, nav .sixth-section .flx .columns-d .block-d .img-d li, .sixth-section .flx .columns-d .block-d nav .img-d li, .sixth-section .first-section .first-col .secbut .columns-d .block-d nav .img-d li, .first-section .first-col .sixth-section .secbut .columns-d .block-d nav .img-d li, .sixth-section .flx .columns-d .block-d .img-d .columns-d nav .block-d li, nav .sixth-section .flx .columns-d .block-d li, .first-section .first-col nav .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d li, .sixth-section .flx .columns-d nav .block-d li, nav .sixth-section .first-section .first-col .secbut .columns-d .block-d li, .sixth-section .first-section .first-col .secbut .columns-d nav .block-d li, nav .first-section .first-col .sixth-section .secbut .columns-d .block-d li, .first-section .first-col .sixth-section .secbut .columns-d nav .block-d li, nav .first-section .first-col .secbut li, .first-section .first-col nav .secbut li, .desctext, .sixth-section .flx .columns-d .block-d .bl-d .desctext-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .desctext-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .desctext-d, .headtext, .shtext {
+  color: #020113;
+  font-family: main;
+  font-size: 16px;
+}
+
+.come1 {
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+.come2 {
+  transform: translateX(300px);
+  opacity: 0;
+}
+
+.come3 {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.come4 {
+  opacity: 0;
+}
+
+.come1alt {
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+.come2alt {
+  transform: translateX(300px);
+  opacity: 0;
+}
+
+.come3alt {
+  transform: scale(0.6);
+  opacity: 0;
+}
+
+.come4alt {
+  opacity: 0;
+}
+
+.come5alt {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.content {
+  position: relative;
+}
+
+.respo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 100%;
+}
+.respo .units {
+  margin: auto;
+}
+
+.flx, .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .secbut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flxalt, .active, .fourth-section .flx .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .active .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block, .fourth-section .first-section .first-col .secbut .active .block, .first-section .first-col .fourth-section .secbut .active .block, .fourth-section .flx .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .first-section .first-col .secbut .flxalt .block, .first-section .first-col .fourth-section .secbut .flxalt .block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flxs {
+  display: flex;
+  align-items: center;
+}
+
+.shtext {
+  font-size: 20px;
+  color: #1A7BFF;
+}
+
+.headtext {
+  font-size: 48px;
+  font-family: mainbold;
+}
+
+.desctext, .sixth-section .flx .columns-d .block-d .bl-d .desctext-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .desctext-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .desctext-d {
+  color: #B6B6B6;
+}
+
+p {
+  margin: 0;
+}
+
+.act::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background-color: #020113;
+  bottom: 0;
+}
+
+nav {
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .flx, nav .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d nav .img-d, nav .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d nav .img-d, nav .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d nav .img-d, nav .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .block-d .img-d .columns-d nav .block-d, nav .sixth-section .flx .columns-d .block-d, .first-section .first-col nav .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d nav .block-d, nav .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d nav .block-d, nav .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d nav .block-d, nav .first-section .first-col .secbut, .first-section .first-col nav .secbut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .flx li, nav .sixth-section .flx .columns-d .block-d .img-d li, .sixth-section .flx .columns-d .block-d nav .img-d li, .sixth-section .first-section .first-col .secbut .columns-d .block-d nav .img-d li, .first-section .first-col .sixth-section .secbut .columns-d .block-d nav .img-d li, .sixth-section .flx .columns-d .block-d .img-d .columns-d nav .block-d li, nav .sixth-section .flx .columns-d .block-d li, .first-section .first-col nav .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d li, .sixth-section .flx .columns-d nav .block-d li, nav .sixth-section .first-section .first-col .secbut .columns-d .block-d li, .sixth-section .first-section .first-col .secbut .columns-d nav .block-d li, nav .first-section .first-col .sixth-section .secbut .columns-d .block-d li, .first-section .first-col .sixth-section .secbut .columns-d nav .block-d li, nav .first-section .first-col .secbut li, .first-section .first-col nav .secbut li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+}
+nav .butlogs button:nth-child(1) {
+  color: #020113;
+  background-color: transparent;
+}
+nav .butlogs button:nth-child(2) {
+  border: 2px solid #1A7BFF;
+  transition: 0.3s;
+}
+nav .butlogs button:nth-child(2):hover {
+  background: transparent;
+  color: #1A7BFF;
+  border: 2px solid #1A7BFF;
+  transition: 0.3s;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.first-section .first-col {
+  transition: 0.8s;
+}
+.first-section .first-col .headtext {
+  margin: 10px 0;
+}
+.first-section .first-col .desctext, .first-section .first-col .sixth-section .flx .columns-d .block-d .bl-d .desctext-d, .sixth-section .flx .columns-d .block-d .bl-d .first-section .first-col .desctext-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .desctext-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .desctext-d {
+  margin-bottom: 10px;
+}
+.first-section .first-col .getstart {
+  border: 2px solid #1A7BFF;
+  transition: 0.3s;
+}
+.first-section .first-col .getstart:hover {
+  background: transparent;
+  color: #1A7BFF;
+  border: 2px solid #1A7BFF;
+  transition: 0.3s;
+}
+.first-section .first-col .secbut {
+  color: #020113;
+  background: transparent;
+  padding: 8px 10px;
+}
+.first-section .first-col .secbut img {
+  margin-right: 8px;
+}
+.first-section .second-col {
+  transition: 0.8s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.third-section .flx, .third-section .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .third-section .img-d, .third-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .third-section .img-d, .third-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .third-section .img-d, .third-section .sixth-section .flx .columns-d .block-d, .first-section .first-col .third-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .third-section .block-d, .third-section .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .third-section .block-d, .third-section .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .third-section .block-d, .third-section .first-section .first-col .secbut, .first-section .first-col .third-section .secbut {
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.third-section .flx .logopartner, .sixth-section .flx .columns-d .block-d .third-section .img-d .logopartner, .sixth-section .first-section .first-col .secbut .columns-d .block-d .third-section .img-d .logopartner, .first-section .first-col .sixth-section .secbut .columns-d .block-d .third-section .img-d .logopartner, .third-section .sixth-section .flx .columns-d .block-d .logopartner, .sixth-section .flx .columns-d .third-section .block-d .logopartner, .sixth-section .first-section .first-col .secbut .columns-d .third-section .block-d .logopartner, .first-section .first-col .sixth-section .secbut .columns-d .third-section .block-d .logopartner, .third-section .first-section .first-col .secbut .logopartner, .first-section .first-col .third-section .secbut .logopartner {
+  transition: 0.8s;
+}
+
+.fourth-section {
+  transition: 0.8s;
+  margin-top: 150px;
+}
+.fourth-section .flx, .fourth-section .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .fourth-section .img-d, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d, .fourth-section .sixth-section .flx .columns-d .block-d, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .fourth-section .block-d, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d, .fourth-section .first-section .first-col .secbut, .first-section .first-col .fourth-section .secbut {
+  flex-direction: column;
+}
+.fourth-section .flx .starter, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .starter, .fourth-section .sixth-section .flx .columns-d .block-d .starter, .sixth-section .flx .columns-d .fourth-section .block-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .starter, .fourth-section .first-section .first-col .secbut .starter, .first-section .first-col .fourth-section .secbut .starter {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.fourth-section .flx .starter .shtext, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .starter .shtext, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .starter .shtext, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .starter .shtext, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .starter .shtext, .sixth-section .flx .columns-d .fourth-section .block-d .starter .shtext, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .starter .shtext, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .starter .shtext, .fourth-section .first-section .first-col .secbut .starter .shtext, .first-section .first-col .fourth-section .secbut .starter .shtext {
+  font-size: 20px;
+}
+.fourth-section .flx .starter .headtext, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .starter .headtext, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .starter .headtext, .sixth-section .flx .columns-d .fourth-section .block-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .starter .headtext, .fourth-section .first-section .first-col .secbut .starter .headtext, .first-section .first-col .fourth-section .secbut .starter .headtext {
+  font-size: 36px;
+  margin: 20px 0;
+}
+.fourth-section .flx .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .flxalt, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .flxalt, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .flxalt, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .flxalt, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .flxalt, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .flxalt, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt, .fourth-section .flx .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .active, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .active, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .active, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .block-d .active, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .active, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .active, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .active, .first-section .first-col .fourth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .block-d .active, .sixth-section .flx .columns-d .fourth-section .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active, .fourth-section .flx .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .active .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block, .fourth-section .flx .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt .block, .fourth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt .block, .fourth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .columns-d .block-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d .img-d .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .first-section .first-col .secbut .flxalt, .fourth-section .first-section .first-col .secbut .active, .fourth-section .first-section .first-col .secbut .active .block, .fourth-section .first-section .first-col .secbut .flxalt .block, .first-section .first-col .fourth-section .secbut .flxalt, .first-section .first-col .fourth-section .secbut .active, .first-section .first-col .fourth-section .secbut .active .block, .first-section .first-col .fourth-section .secbut .flxalt .block {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.fourth-section .flx .flxalt .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block, .fourth-section .flx .active .block, .fourth-section .sixth-section .flx .columns-d .block-d .img-d .active .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block, .fourth-section .first-section .first-col .secbut .flxalt .block, .fourth-section .first-section .first-col .secbut .active .block, .first-section .first-col .fourth-section .secbut .flxalt .block, .first-section .first-col .fourth-section .secbut .active .block {
+  background: #FFFFFF;
+  transition: 1s;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 380px;
+  width: 30%;
+  border-radius: 10px;
+  border: 3px solid rgba(31, 31, 31, 0.1254901961);
+  border-radius: 10px;
+}
+.fourth-section .flx .flxalt .block .nexticon, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block .nexticon, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .nexticon, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .nexticon, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block .nexticon, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block .nexticon, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block .nexticon, .fourth-section .flx .active .block .nexticon, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block .nexticon, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block .nexticon, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block .nexticon, .sixth-section .flx .columns-d .fourth-section .block-d .active .block .nexticon, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block .nexticon, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block .nexticon, .fourth-section .first-section .first-col .secbut .flxalt .block .nexticon, .fourth-section .first-section .first-col .secbut .active .block .nexticon, .first-section .first-col .fourth-section .secbut .flxalt .block .nexticon, .first-section .first-col .fourth-section .secbut .active .block .nexticon {
+  cursor: pointer;
+}
+.fourth-section .flx .flxalt .block .block-img, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block .block-img, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .block-img, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .block-img, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block .block-img, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block .block-img, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block .block-img, .fourth-section .flx .active .block .block-img, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block .block-img, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block .block-img, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block .block-img, .sixth-section .flx .columns-d .fourth-section .block-d .active .block .block-img, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block .block-img, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block .block-img, .fourth-section .first-section .first-col .secbut .flxalt .block .block-img, .fourth-section .first-section .first-col .secbut .active .block .block-img, .first-section .first-col .fourth-section .secbut .flxalt .block .block-img, .first-section .first-col .fourth-section .secbut .active .block .block-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #1A7BFF;
+}
+.fourth-section .flx .flxalt .block .txt h1, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block .txt h1, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .txt h1, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .txt h1, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block .txt h1, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block .txt h1, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block .txt h1, .fourth-section .flx .active .block .txt h1, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block .txt h1, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block .txt h1, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block .txt h1, .sixth-section .flx .columns-d .fourth-section .block-d .active .block .txt h1, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block .txt h1, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block .txt h1, .fourth-section .first-section .first-col .secbut .flxalt .block .txt h1, .fourth-section .first-section .first-col .secbut .active .block .txt h1, .first-section .first-col .fourth-section .secbut .flxalt .block .txt h1, .first-section .first-col .fourth-section .secbut .active .block .txt h1 {
+  color: #020113;
+  font-size: 24px;
+  font-family: mainbold;
+  margin: 20px 0;
+}
+.fourth-section .flx .flxalt .block .txt p, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block .txt p, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .txt p, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .txt p, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block .txt p, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block .txt p, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block .txt p, .fourth-section .flx .active .block .txt p, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block .txt p, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block .txt p, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block .txt p, .sixth-section .flx .columns-d .fourth-section .block-d .active .block .txt p, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block .txt p, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block .txt p, .fourth-section .first-section .first-col .secbut .flxalt .block .txt p, .fourth-section .first-section .first-col .secbut .active .block .txt p, .first-section .first-col .fourth-section .secbut .flxalt .block .txt p, .first-section .first-col .fourth-section .secbut .active .block .txt p {
+  color: #171624;
+  font-size: 16px;
+  font-family: main;
+}
+
+.active {
+  background: #1A7BFF;
+  transition: 1s;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 380px;
+  width: 30%;
+  border-radius: 10px;
+  border: 3px solid rgba(31, 31, 31, 0.1254901961);
+  border-radius: 10px;
+}
+.active .block-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+.active .txt h1 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: mainbold;
+  margin: 20px 0;
+}
+.active .txt p {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: main;
+}
+
+.active {
+  background: #1A7BFF !important;
+  transition: 1s;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 380px;
+  width: 30%;
+  border-radius: 10px;
+  border: 3px solid rgba(31, 31, 31, 0.1254901961);
+  border-radius: 10px;
+}
+.active .block-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #FFFFFF !important;
+}
+.active .txt h1 {
+  color: #FFFFFF !important;
+  font-size: 24px;
+  font-family: mainbold;
+  margin: 20px 0;
+}
+.active .txt p {
+  color: #FFFFFF !important;
+  font-size: 16px;
+  font-family: main;
+}
+
+.fifth-section {
+  transition: 0.8s;
+  margin-top: 200px;
+}
+.fifth-section .flx, .fifth-section .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .fifth-section .img-d, .fifth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fifth-section .img-d, .fifth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fifth-section .img-d, .fifth-section .sixth-section .flx .columns-d .block-d, .first-section .first-col .fifth-section .sixth-section .secbut .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .fifth-section .block-d, .fifth-section .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .fifth-section .block-d, .fifth-section .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .fifth-section .block-d, .fifth-section .first-section .first-col .secbut, .first-section .first-col .fifth-section .secbut {
+  flex-direction: column;
+}
+.fifth-section .flx .starter, .sixth-section .flx .columns-d .block-d .fifth-section .img-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fifth-section .img-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fifth-section .img-d .starter, .fifth-section .sixth-section .flx .columns-d .block-d .starter, .sixth-section .flx .columns-d .fifth-section .block-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .fifth-section .block-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .fifth-section .block-d .starter, .fifth-section .first-section .first-col .secbut .starter, .first-section .first-col .fifth-section .secbut .starter {
+  transition: 1s;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.fifth-section .flx .starter .shtext, .fifth-section .sixth-section .flx .columns-d .block-d .img-d .starter .shtext, .sixth-section .flx .columns-d .block-d .fifth-section .img-d .starter .shtext, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fifth-section .img-d .starter .shtext, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fifth-section .img-d .starter .shtext, .sixth-section .flx .columns-d .fifth-section .block-d .starter .shtext, .sixth-section .first-section .first-col .secbut .columns-d .fifth-section .block-d .starter .shtext, .first-section .first-col .sixth-section .secbut .columns-d .fifth-section .block-d .starter .shtext, .fifth-section .first-section .first-col .secbut .starter .shtext, .first-section .first-col .fifth-section .secbut .starter .shtext {
+  font-size: 20px;
+}
+.fifth-section .flx .starter .headtext, .fifth-section .sixth-section .flx .columns-d .block-d .img-d .starter .headtext, .sixth-section .flx .columns-d .block-d .fifth-section .img-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fifth-section .img-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fifth-section .img-d .starter .headtext, .sixth-section .flx .columns-d .fifth-section .block-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .fifth-section .block-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .fifth-section .block-d .starter .headtext, .fifth-section .first-section .first-col .secbut .starter .headtext, .first-section .first-col .fifth-section .secbut .starter .headtext {
+  font-size: 36px;
+  margin: 20px 0;
+}
+.fifth-section .flx .imgb, .sixth-section .flx .columns-d .block-d .fifth-section .img-d .imgb, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fifth-section .img-d .imgb, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fifth-section .img-d .imgb, .fifth-section .sixth-section .flx .columns-d .block-d .imgb, .sixth-section .flx .columns-d .fifth-section .block-d .imgb, .sixth-section .first-section .first-col .secbut .columns-d .fifth-section .block-d .imgb, .first-section .first-col .sixth-section .secbut .columns-d .fifth-section .block-d .imgb, .fifth-section .first-section .first-col .secbut .imgb, .first-section .first-col .fifth-section .secbut .imgb {
+  transition: 1s;
+  margin-top: 100px;
+}
+
+.sixth-section {
+  margin: 100px 0;
+}
+.sixth-section .flx, .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .flx .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut, .first-section .first-col .sixth-section .secbut {
+  justify-content: space-between;
+}
+.sixth-section .flx .bockl, .sixth-section .flx .columns-d .block-d .bockl, .sixth-section .first-section .first-col .secbut .bockl, .first-section .first-col .sixth-section .secbut .bockl {
+  transition: 1.4s;
+}
+.sixth-section .flx .shrnk, .sixth-section .flx .columns-d .block-d .shrnk, .sixth-section .first-section .first-col .secbut .shrnk, .first-section .first-col .sixth-section .secbut .shrnk {
+  display: block;
+}
+.sixth-section .flx .headtext, .sixth-section .flx .columns-d .block-d .headtext, .sixth-section .first-section .first-col .secbut .headtext, .first-section .first-col .sixth-section .secbut .headtext {
+  font-size: 36px;
+  margin: 20px 0;
+}
+.sixth-section .flx .office-img, .sixth-section .flx .columns-d .block-d .office-img, .sixth-section .first-section .first-col .secbut .office-img, .first-section .first-col .sixth-section .secbut .office-img {
+  transition: 0.8s;
+  position: relative;
+  height: 577px;
+  width: 495px;
+  margin: auto;
+}
+.sixth-section .flx .office-img::before, .sixth-section .flx .columns-d .block-d .office-img::before, .sixth-section .first-section .first-col .secbut .office-img::before, .first-section .first-col .sixth-section .secbut .office-img::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #1A7BFF;
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
+.sixth-section .flx .office-img .img-d-office, .sixth-section .flx .columns-d .block-d .img-d .office-img .img-d-office, .sixth-section .first-section .first-col .secbut .office-img .img-d-office, .first-section .first-col .sixth-section .secbut .office-img .img-d-office {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .block-d .img-d .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d {
+  padding: 10px;
+  margin: 30px 0;
+  transition: 1s;
+}
+.sixth-section .flx .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d {
+  justify-content: center !important;
+  height: 88px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #1A7BFF;
+  margin-right: 60px;
+}
+.sixth-section .flx .columns-d .block-d .bl-d .headtext-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .headtext-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .headtext-d {
+  font-size: 24px;
+  color: #020113;
+  font-family: mainbold;
+  margin-bottom: 30px;
+}
+.chap-first .flx, .chap-first .first-section .first-col .secbut, .first-section .first-col .chap-first .secbut, .chap-first .sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .chap-first .block-d, .chap-first .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d, .chap-first .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d, .chap-first .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .chap-first .img-d, .chap-first .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d, .chap-first .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d {
+  flex-direction: column;
+}
+.chap-first .flx .starter, .chap-first .first-section .first-col .secbut .starter, .first-section .first-col .chap-first .secbut .starter, .chap-first .sixth-section .flx .columns-d .block-d .starter, .sixth-section .flx .columns-d .chap-first .block-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .starter, .sixth-section .flx .columns-d .block-d .chap-first .img-d .starter, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .starter, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .starter {
+  text-align: center;
+  width: 590px;
+  transition: 0.6s;
+}
+.chap-first .flx .starter .headtext, .chap-first .first-section .first-col .secbut .starter .headtext, .first-section .first-col .chap-first .secbut .starter .headtext, .sixth-section .flx .columns-d .chap-first .block-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .starter .headtext, .sixth-section .flx .columns-d .block-d .chap-first .img-d .starter .headtext, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .starter .headtext, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .starter .headtext {
+  font-size: 36px;
+  margin: 10px 0;
+}
+.chap-first .flx .plan-chooser, .chap-first .first-section .first-col .secbut .plan-chooser, .first-section .first-col .chap-first .secbut .plan-chooser, .chap-first .sixth-section .flx .columns-d .block-d .plan-chooser, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1050;
+  height: 470px;
+  border-radius: 20px;
+  border: 2px solid rgba(31, 31, 31, 0.4588235294);
+  padding: 20px;
+  margin-top: 50px;
+}
+.chap-first .flx .plan-chooser .plan-block, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  height: calc(100% - 25px);
+  padding: 0 50px;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+}
+.chap-first .flx .plan-chooser .plan-block .price, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .price, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .price, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .price, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .price, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .price, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price {
+  font-size: 36px;
+  font-family: mainbold;
+  color: #020113;
+  margin-bottom: 15px;
+}
+.chap-first .flx .plan-chooser .plan-block .price .month, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .price .month, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .price .month, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .price .month, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .price .month, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .price .month, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price .month, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price .month, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .price .month {
+  font-family: "poppins";
+  font-size: 17px;
+  color: #848199;
+}
+.chap-first .flx .plan-chooser .plan-block .name, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .name, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .name, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .name, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .name, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .name, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .name, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .name, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .name {
+  font-size: 28px;
+  font-family: mainbold;
+  color: #020113;
+  margin-bottom: 10px;
+}
+.chap-first .flx .plan-chooser .plan-block .descname, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .descname, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .descname, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .descname, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .descname, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .descname, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .descname, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .descname, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .descname {
+  font-size: 15px;
+  font-family: main;
+  color: #848199;
+  margin-bottom: 20px;
+}
+.chap-first .flx .plan-chooser .plan-block .plan-option, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .plan-option, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .plan-option, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: main;
+  color: #848199;
+  margin-bottom: 10px;
+}
+.chap-first .flx .plan-chooser .plan-block .plan-option .opt-corct, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .plan-option .opt-corct, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .plan-option .opt-corct, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option .opt-corct, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option .opt-corct, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .plan-option .opt-corct, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option .opt-corct, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option .opt-corct, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .plan-option .opt-corct {
+  margin-right: 10px;
+}
+.chap-first .flx .plan-chooser .plan-block .buttonplace, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .buttonplace, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .buttonplace, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.chap-first .flx .plan-chooser .plan-block .buttonplace .plan-button, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button {
+  padding: 9px 40px;
+  font-family: "poppins";
+  font-size: 15px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  color: #020113;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.chap-first .flx .plan-chooser .plan-block .buttonplace .plan-button:hover, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block .buttonplace .plan-button:hover, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block .buttonplace .plan-button:hover, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button:hover, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button:hover, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block .buttonplace .plan-button:hover, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button:hover, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button:hover, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block .buttonplace .plan-button:hover {
+  background: #1A7BFF;
+  border: 1px solid #1A7BFF;
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3), .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3), .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3), .chap-first .sixth-section .flx .columns-d .block-d .plan-chooser .plan-block:nth-child(3), .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3), .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3), .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3), .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3), .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3), .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) {
+  position: relative;
+  z-index: 2;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3)::before, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3)::before, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3)::before, .chap-first .sixth-section .flx .columns-d .block-d .plan-chooser .plan-block:nth-child(3)::before, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3)::before, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3)::before, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3)::before, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3)::before, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3)::before, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3)::before {
+  content: "";
+  height: 113%;
+  width: 100%;
+  position: absolute;
+  background-color: #1A7BFF;
+  border-radius: 20px;
+  left: 0;
+  z-index: -1;
+  top: -10%;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .price, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .price, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .price, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price {
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .price .month, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .price .month, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .price .month, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price .month, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price .month, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .price .month, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price .month, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price .month, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .price .month {
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .name, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .name, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .name, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .name, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .name, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .name, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .name, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .name, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .name {
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .descname, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .descname, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .descname, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .descname, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .descname, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .descname, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .descname, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .descname, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .descname {
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .plan-option, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .plan-option, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .plan-option, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .plan-option, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .plan-option, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .plan-option, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .plan-option, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .plan-option, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .plan-option {
+  color: #FFFFFF;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button {
+  padding: 9px 40px;
+  background: #FFFFFF;
+  font-family: "poppins";
+  font-size: 15px;
+  color: #020113;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.chap-first .flx .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .chap-first .first-section .first-col .secbut .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .first-section .first-col .chap-first .secbut .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .sixth-section .flx .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .sixth-section .first-section .first-col .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .first-section .first-col .sixth-section .secbut .columns-d .chap-first .block-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .sixth-section .flx .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-first .img-d .plan-chooser .plan-block:nth-child(3) .buttonplace .plan-button:hover {
+  background: #1A7BFF;
+  border: 1px solid #1A7BFF;
+  color: #FFFFFF;
+}
+
+.chap-second {
+  margin-top: 150px;
+}
+.chap-second .chap-second-first {
+  transition: 1s;
+}
+.chap-second .chap-second-first .headtext {
+  font-size: 36px;
+}
+.chap-second .chap-second-first .desctext, .chap-second .chap-second-first .sixth-section .flx .columns-d .block-d .bl-d .desctext-d, .sixth-section .flx .columns-d .block-d .bl-d .chap-second .chap-second-first .desctext-d, .chap-second .chap-second-first .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .desctext-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .bl-d .chap-second .chap-second-first .desctext-d, .chap-second .chap-second-first .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .desctext-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .bl-d .chap-second .chap-second-first .desctext-d {
+  width: 400px;
+}
+.chap-second .chap-second-first .getintouch {
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border: 2px solid #1A7BFF;
+}
+.chap-second .chap-second-first .getintouch:hover {
+  border: 2px solid #1A7BFF;
+  color: #1A7BFF;
+  background: transparent;
+}
+.chap-second .chap-second-second {
+  transition: 1s;
+}
+
+.lintext {
+  font-family: main;
+  color: #0F0E20;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.head-line {
+  color: #020113;
+  font-size: 24px;
+  font-family: mainbold;
+}
+
+.footer {
+  transition: 1s;
+  margin-top: 200px;
+}
+.footer .flx, .footer .first-section .first-col .secbut, .first-section .first-col .footer .secbut, .footer .sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .footer .block-d, .footer .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d, .footer .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d, .footer .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .footer .img-d, .footer .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d, .footer .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer .flx .first-f, .footer .first-section .first-col .secbut .first-f, .first-section .first-col .footer .secbut .first-f, .footer .sixth-section .flx .columns-d .block-d .first-f, .sixth-section .flx .columns-d .footer .block-d .first-f, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .first-f, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .first-f, .sixth-section .flx .columns-d .block-d .footer .img-d .first-f, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .first-f, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .first-f {
+  width: 30%;
+  margin-right: auto;
+}
+.footer .flx .first-f .socials, .footer .first-section .first-col .secbut .first-f .socials, .first-section .first-col .footer .secbut .first-f .socials, .sixth-section .flx .columns-d .footer .block-d .first-f .socials, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .first-f .socials, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .first-f .socials, .sixth-section .flx .columns-d .block-d .footer .img-d .first-f .socials, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .first-f .socials, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .first-f .socials {
+  display: flex;
+  align-items: center;
+}
+.footer .flx .first-f .socials .soc:nth-child(1), .footer .first-section .first-col .secbut .first-f .socials .soc:nth-child(1), .first-section .first-col .footer .secbut .first-f .socials .soc:nth-child(1), .sixth-section .flx .columns-d .footer .block-d .first-f .socials .soc:nth-child(1), .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .first-f .socials .soc:nth-child(1), .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .first-f .socials .soc:nth-child(1), .sixth-section .flx .columns-d .block-d .footer .img-d .first-f .socials .soc:nth-child(1), .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .first-f .socials .soc:nth-child(1), .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .first-f .socials .soc:nth-child(1) {
+  margin-left: 0px;
+}
+.footer .flx .first-f .socials .soc, .footer .first-section .first-col .secbut .first-f .socials .soc, .first-section .first-col .footer .secbut .first-f .socials .soc, .sixth-section .flx .columns-d .footer .block-d .first-f .socials .soc, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .first-f .socials .soc, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .first-f .socials .soc, .sixth-section .flx .columns-d .block-d .footer .img-d .first-f .socials .soc, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .first-f .socials .soc, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .first-f .socials .soc {
+  margin: 10px;
+}
+.footer .flx .second-f, .footer .first-section .first-col .secbut .second-f, .first-section .first-col .footer .secbut .second-f, .footer .sixth-section .flx .columns-d .block-d .second-f, .sixth-section .flx .columns-d .footer .block-d .second-f, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .second-f, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .second-f, .sixth-section .flx .columns-d .block-d .footer .img-d .second-f, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .second-f, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .second-f {
+  width: 10%;
+}
+.footer .flx .second-f .lin, .footer .first-section .first-col .secbut .second-f .lin, .first-section .first-col .footer .secbut .second-f .lin, .sixth-section .flx .columns-d .footer .block-d .second-f .lin, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .second-f .lin, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .second-f .lin, .sixth-section .flx .columns-d .block-d .footer .img-d .second-f .lin, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .second-f .lin, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .second-f .lin {
+  font-family: main;
+  color: #0F0E20;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.footer .flx .third-f, .footer .first-section .first-col .secbut .third-f, .first-section .first-col .footer .secbut .third-f, .footer .sixth-section .flx .columns-d .block-d .third-f, .sixth-section .flx .columns-d .footer .block-d .third-f, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d .third-f, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d .third-f, .sixth-section .flx .columns-d .block-d .footer .img-d .third-f, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d .third-f, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d .third-f {
+  width: 30%;
+  margin-left: auto;
+}
+.footer .footer-line {
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
+  background-color: #020113;
+}
+.footer .end {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: main;
+  color: #0F0E20;
+  font-size: 16px;
+}
+
+.menuburger {
+  position: absolute;
+  top: 10;
+  right: 20;
+  display: none;
+  height: 30px;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menuburger span:nth-child(2) {
+  margin: 8px 0;
+}
+.menuburger span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 2px;
+  background-color: #1A7BFF;
+  transition: 0.3s;
+}
+.menuburger span:nth-child(1) {
+  transform: translateY(-8px);
+}
+.menuburger span:nth-child(3) {
+  transform: translateY(8px);
+}
+
+.menuactive span:nth-child(1) {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.menuactive span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.menuactive span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  .menuburger {
+    display: flex;
+    z-index: 9;
+    position: fixed;
+    top: 15;
+    right: 15;
+  }
+  .logo {
+    position: absolute;
+    top: 15;
+    left: 10;
+  }
+  .content {
+    width: 100%;
+  }
+  .third-section .flx, .third-section .first-section .first-col .secbut, .first-section .first-col .third-section .secbut, .third-section .sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .third-section .block-d, .third-section .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .third-section .block-d, .third-section .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .third-section .block-d, .third-section .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .third-section .img-d, .third-section .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .third-section .img-d, .third-section .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .third-section .img-d {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .third-section .flx .logopartner, .third-section .first-section .first-col .secbut .logopartner, .first-section .first-col .third-section .secbut .logopartner, .third-section .sixth-section .flx .columns-d .block-d .logopartner, .sixth-section .flx .columns-d .third-section .block-d .logopartner, .sixth-section .first-section .first-col .secbut .columns-d .third-section .block-d .logopartner, .first-section .first-col .sixth-section .secbut .columns-d .third-section .block-d .logopartner, .sixth-section .flx .columns-d .block-d .third-section .img-d .logopartner, .sixth-section .first-section .first-col .secbut .columns-d .block-d .third-section .img-d .logopartner, .first-section .first-col .sixth-section .secbut .columns-d .block-d .third-section .img-d .logopartner {
+    width: 150px;
+    margin: 20px;
+    transition: 0.8s;
+  }
+  .flx, .first-section .first-col .secbut, .sixth-section .flx .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d, .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d {
+    flex-direction: column;
+  }
+  .starter {
+    max-width: 100%;
+  }
+  .flxalt, .fourth-section .flx .flxalt .block, .fourth-section .first-section .first-col .secbut .flxalt .block, .first-section .first-col .fourth-section .secbut .flxalt .block, .active, .fourth-section .flx .active .block, .fourth-section .first-section .first-col .secbut .active .block, .first-section .first-col .fourth-section .secbut .active .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block {
+    margin-top: 10px !important;
+  }
+  .flxalt, .fourth-section .flx .flxalt .block, .fourth-section .first-section .first-col .secbut .flxalt .block, .first-section .first-col .fourth-section .secbut .flxalt .block, .active, .fourth-section .flx .active .block, .fourth-section .first-section .first-col .secbut .active .block, .first-section .first-col .fourth-section .secbut .active .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block {
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .flxalt .block, .fourth-section .flx .flxalt .block .block, .fourth-section .first-section .first-col .secbut .flxalt .block .block, .first-section .first-col .fourth-section .secbut .flxalt .block .block, .active .block, .fourth-section .flx .active .block .block, .fourth-section .first-section .first-col .secbut .active .block .block, .first-section .first-col .fourth-section .secbut .active .block .block, .sixth-section .flx .columns-d .fourth-section .block-d .flxalt .block .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .flxalt .block .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .flxalt .block .block, .sixth-section .flx .columns-d .fourth-section .block-d .active .block .block, .sixth-section .first-section .first-col .secbut .columns-d .fourth-section .block-d .active .block .block, .first-section .first-col .sixth-section .secbut .columns-d .fourth-section .block-d .active .block .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .flxalt .block .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .flxalt .block .block, .sixth-section .flx .columns-d .block-d .fourth-section .img-d .active .block .block, .sixth-section .first-section .first-col .secbut .columns-d .block-d .fourth-section .img-d .active .block .block, .first-section .first-col .sixth-section .secbut .columns-d .block-d .fourth-section .img-d .active .block .block {
+    width: 320px;
+    min-width: 320px;
+    margin: auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .fifth-section {
+    margin-top: 40px;
+  }
+  .fifth-section .imgb {
+    width: 90%;
+  }
+  .block-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .img-d {
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
+  .office-img {
+    max-width: 250px;
+    max-height: 350px !important;
+  }
+  .plan-chooser {
+    flex-direction: column;
+    width: 90% !important;
+    height: auto !important;
+  }
+  .plan-block {
+    margin: 30px 0;
+    height: 400px !important;
+  }
+  .plan-block:nth-child(3)::before {
+    top: -5% !important;
+  }
+  .chap-second .flx, .chap-second .first-section .first-col .secbut, .first-section .first-col .chap-second .secbut, .chap-second .sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .chap-second .block-d, .chap-second .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .chap-second .block-d, .chap-second .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .chap-second .block-d, .chap-second .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .chap-second .img-d, .chap-second .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .chap-second .img-d, .chap-second .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .chap-second .img-d {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0 !important;
+  }
+  .footer .flx, .footer .first-section .first-col .secbut, .first-section .first-col .footer .secbut, .footer .sixth-section .flx .columns-d .block-d, .sixth-section .flx .columns-d .footer .block-d, .footer .sixth-section .first-section .first-col .secbut .columns-d .block-d, .sixth-section .first-section .first-col .secbut .columns-d .footer .block-d, .footer .first-section .first-col .sixth-section .secbut .columns-d .block-d, .first-section .first-col .sixth-section .secbut .columns-d .footer .block-d, .footer .sixth-section .flx .columns-d .block-d .img-d, .sixth-section .flx .columns-d .block-d .footer .img-d, .footer .sixth-section .first-section .first-col .secbut .columns-d .block-d .img-d, .sixth-section .first-section .first-col .secbut .columns-d .block-d .footer .img-d, .footer .first-section .first-col .sixth-section .secbut .columns-d .block-d .img-d, .first-section .first-col .sixth-section .secbut .columns-d .block-d .footer .img-d {
+    flex-direction: column;
+  }
+  .footer .footer-columns {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90% !important;
+    margin: 20px auto;
+  }
+  .logoa {
+    top: 10;
+    left: 10;
+  }
+  .first-col {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .first-col .butttos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-col .butttos .secbut {
+    flex-direction: row;
+  }
+  .respo {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.224);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    justify-content: space-between;
+    padding: 20px;
+    transition: 0.6s;
+  }
+  .respo .units {
+    margin: auto;
+  }
+  .respo .units li {
+    margin: 20px 0;
+  }
+  .respocome {
+    right: 0;
+  }
+}

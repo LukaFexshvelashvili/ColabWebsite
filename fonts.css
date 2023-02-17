@@ -1,0 +1,8 @@
+@font-face {
+    font-family: main;
+    src: url('fonts/DMSans-Medium.ttf');
+}
+@font-face {
+    font-family: mainbold;
+    src: url('fonts/DMSans-Bold.ttf');
+}
